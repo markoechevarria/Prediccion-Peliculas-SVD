@@ -23,7 +23,7 @@ async function cargarPeliculas() {
     for (const letra of Object.keys(agrupado).sort()) {
         const toggle = document.createElement("div");
         toggle.className = "year-toggle";
-        toggle.innerText = `📁 ${letra}`;
+        toggle.innerText = `Letra: ${letra}`;
         contenedor.appendChild(toggle);
 
         const lista = document.createElement("div");
@@ -115,9 +115,9 @@ function mostrarRecomendaciones(lista) {
     contenedor.innerHTML += `
       <div class="card">
         <div>
-          <strong>🎬 ${peli.title}</strong><br>
+          <strong> ${peli.title}</strong><br>
           <span style="font-size: 14px; color: #9be49b;">
-            📈 Predicción: ${peli.predicted_score.toFixed(2)} / 5.00
+            Predicción: ${peli.predicted_score.toFixed(2)} / 5.00
           </span>
         </div>
       </div>
@@ -129,15 +129,11 @@ function mostrarMetricas(metricas) {
   const div = document.getElementById("metricas");
   if (metricas.success) {
     div.innerHTML = `
-      <h2>📊 Precisión del Modelo</h2>
+      <h2> Precisión del Modelo</h2>
       <p>RMSE: <strong>${metricas.metricas.rmse.toFixed(4)}</strong> &nbsp;|&nbsp; MAE: <strong>${metricas.metricas.mae.toFixed(4)}</strong></p>
       <div style="max-width: 700px; margin: auto; font-size: 15px; color: #ccc;">
-        <p>Este sistema utiliza un <strong>modelo de recomendación basado en SVD (Singular Value Decomposition)</strong>, que predice tus gustos analizando patrones de calificación entre miles de usuarios. El modelo estima qué tan probable es que te guste una película que aún no has visto, comparando tus calificaciones con las de otros usuarios similares.</p>
+        <p>Este sistema utiliza un <strong>modelo de recomendación basado en SVD (Singular Value Decomposition)</strong>, que predice tus gustos analizando patrones de calificación entre miles de usuarios. El modelo estima que tan probable es que te guste una película que aún no has visto, comparando tus calificaciones con las de otros usuarios.</p>
         <p><strong>RMSE (Root Mean Square Error)</strong> y <strong>MAE (Mean Absolute Error)</strong> son métricas que indican qué tan cerca están las predicciones del modelo respecto a las calificaciones reales. Mientras más bajos sean estos valores, mejor es la calidad de las predicciones.</p>
-        <ul>
-          <li><strong>RMSE</strong> penaliza más los errores grandes.</li>
-          <li><strong>MAE</strong> es un promedio directo de los errores absolutos.</li>
-        </ul>
       </div>
     `;
   } else {

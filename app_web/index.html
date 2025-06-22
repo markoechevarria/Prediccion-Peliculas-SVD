@@ -8,17 +8,17 @@
 </head>
 <body>
   <div class="container">
-    <h1>🎬 Recomendador de Películas</h1>
+    <h1>Recomendador de Películas</h1>
+    <h3 id="curso" >Curso de Inteligencia Artificial - FISI - UNMSM</h3>
     <div id="logo-unmsm">
         <img  src="static/logo.png" alt="logo UNMSM" class="unmsm-icon">
     </div>
     <h2>Selecciona 5 películas que hayas visto y califícalas</h2>
 
-    <p style="text-align:center; max-width: 800px; margin: auto; font-size: 16px;">
-        Esta aplicación te permite obtener <strong>recomendaciones personalizadas de películas</strong> en base a tus gustos.
-        Solo tienes que seleccionar 5 películas que hayas visto y asignarles una calificación del 1 al 5.
+    <p style="text-align:center; max-width: 700px; margin: auto; font-size: 16px;">
+        Esta aplicación te permite obtener <strong>recomendaciones personalizadas de películas</strong> en base a las calificaciones que le des.
+        Selecciona <strong> 5 películas </strong>que hayas visto y asignarles una calificación del 1 al 5.
     </p>
-
 
     <div id="agrupado-por-letra"></div>
 
@@ -26,9 +26,9 @@
       <button onclick="enviarRatings()">Obtener Recomendaciones</button>
     </div>
 
-    <div class="results" id="recomendaciones"></div>
+    <div class="resultados" id="recomendaciones"></div>
 
-    <div class="metrics" id="metricas"></div>
+    <div class="metricas" id="metricas"></div>
   </div>
 
   <script src="/static/index.js"></script>

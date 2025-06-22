@@ -59,6 +59,13 @@ button:hover {
   border-left: 4px solid #4caf50;
 }
 
+#curso {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 18px;
+  color: #ccc;
+}
+
 #logo-unmsm {
   max-width: 20%;
   height: auto;
@@ -118,7 +125,7 @@ button:hover {
   border: 1px solid #555;
 }
 
-.results {
+.resultados {
   margin-top: 40px;
 }
 
@@ -141,7 +148,7 @@ button:hover {
   color: #4caf50;
 }
 
-.metrics {
+.metricas {
   text-align: center;
   margin-top: 40px;
   padding: 20px;
@@ -154,15 +161,15 @@ button:hover {
   color: #ccc;
 }
 
-.metrics h2 {
+.metricas h2 {
   margin-bottom: 10px;
 }
 
-.metrics p {
+.metricas p {
   margin: 8px 0;
 }
 
-.metrics ul {
+.metricas ul {
   list-style: disc;
   margin: 10px 30px;
   text-align: left;
