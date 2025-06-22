@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Recomendador de Películas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎬 Recomendador de Películas</h1>
+    <div id="logo-unmsm">
+        <img  src="static/logo.png" alt="logo UNMSM" class="unmsm-icon">
+    </div>
+    <h2>Selecciona 5 películas que hayas visto y califícalas</h2>
+
+    <p style="text-align:center; max-width: 800px; margin: auto; font-size: 16px;">
+        Esta aplicación te permite obtener <strong>recomendaciones personalizadas de películas</strong> en base a tus gustos.
+        Solo tienes que seleccionar 5 películas que hayas visto y asignarles una calificación del 1 al 5.
+    </p>
+
+
+    <div id="agrupado-por-letra"></div>
+
+    <div style="text-align: center;">
+      <button onclick="enviarRatings()">Obtener Recomendaciones</button>
+    </div>
+
+    <div class="results" id="recomendaciones"></div>
+
+    <div class="metrics" id="metricas"></div>
+  </div>
+
+  <script src="/static/index.js"></script>
+</body>
+</html>
