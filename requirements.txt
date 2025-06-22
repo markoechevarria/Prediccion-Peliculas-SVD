@@ -2,6 +2,6 @@ pydantic
 typing
 pandas
 surprise
-json
+# json
 fastapi
 scikit-surprise
