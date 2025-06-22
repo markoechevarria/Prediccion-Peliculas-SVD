@@ -1,6 +1,7 @@
 pydantic
 typing
 pandas
+uvicorn
 surprise
 # json
 fastapi
